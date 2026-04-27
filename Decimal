@@ -1,0 +1,7 @@
+from math import*
+N=float(input())
+n=modf(N)
+if n[0]>=0.5:
+    print(ceil(N))
+else:
+    print(floor(N))    
