@@ -1,0 +1,7 @@
+a,b=map(str,input().split())
+k=a[-1::-1]
+l=b[-1::-1]
+if k>l:
+    print(k)
+else:
+    print(l)    
