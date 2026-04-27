@@ -1,0 +1,30 @@
+a,b=map(int,input().split())
+sum=0
+f=0
+for i in range(a):
+    v=list(map(int,input().split()))
+    sum+=v[1]  
+for j in range(b):
+    m=list(map(int,input().split()))
+    f+=m[1]
+if b>=2 and a>=2:
+        if (sum/2)==(f/2):
+             print("same") 
+        else:
+             print("different") 
+elif a>=2 and b==1:
+    if(sum/2)==f:
+        print("same")
+    else:
+        print("different") 
+elif a==1 and b>=2:
+    if(sum==f/2 ):
+        print("same")    
+    else:
+        print("different")   
+elif a==1 and b==1:
+     if sum== f:
+         print("same") 
+     else:
+         print("different")       
+                  
